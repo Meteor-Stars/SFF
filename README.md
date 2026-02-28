@@ -1,14 +1,30 @@
-# SFF
+# SFF (Lost in the Non-convex Loss Landscape: How to Fine-tune the Large Time Series Model? Published in ICLR 2026)
 Pytorch implementation of SFF.
+
+## Overview
+
+<img src="figure/framework_SFF.jpg" alt="替代文本" width="auto" height="450">
+
 ## Datasets
   The public datasets can be downloaded from https://drive.google.com/drive/folders/1PPLsAoDbv4WcoXDp-mm4LFxoKwewnKxX and place them in the datasets folder.
-  
-## Model weights for LTSMs
+
+## Usage
 Timer's pre-trained weights can be downloaded from the link https://drive.google.com/drive/folders/15oaiAl4OO5gFqZMJD2lOtX2fxHbpgcU8.
 
-TimesFM's codes and pre-trained weights can be downloaded from the link https://github.com/google-research/timesfm and https://huggingface.co/google/timesfm-2.0-500m-pytorch. The model weight path on Hugging Face is “google/timesfm-2.0-500m-pytorch”.
+In the `run.py` script, different evaluation modes are enabled by setting `training_from_scratch` (TFS), `LP` (linear probing), `LPFF` (linear probing first then full fine-tuning) or `smoothed_full_finetuning`. If both are set to `False`, the original full fine-tuning (FF) strategy is adopted.
 
-MOMENT's codes and pre-trained weights can be downloaded from the links https://github.com/moment-timeseries-foundation-model/moment-research and https://huggingface.co/AutonLab/MOMENT-1-large. The model weight path on Hugging Face is “AutonLab/MOMENT-1-large”.
+
+
+## Reference
+If this repository and the work are helpful to you, please consider citing it:
+
+```
+@inproceedings{zhanglost,
+  title={Lost in the Non-convex Loss Landscape: How to Fine-tune the Large Time Series Model?},
+  author={Zhang, Xu and Wang, Peng and Wang, Wei},
+  booktitle={The Fourteenth International Conference on Learning Representations}
+}
+```
 
 
 

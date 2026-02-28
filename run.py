@@ -177,10 +177,10 @@ if __name__ == '__main__':
         extra_ += '_LPFF'
 
     if args.smoothed_full_finetuning:
-        args.alpha = 0.5
+        args.alpha = 0.7
         args.training_from_scratch=False
         extra_+='_SFF'
-    if not args.training_from_scratch and not args.smoothed_full_finetuning:
+    if not args.training_from_scratch and not args.smoothed_full_finetuning and not args.LP and not args.LPFF:
         args.standard_finetuning=True
         extra_ += '_StandFF'
     if args.training_from_scratch:
