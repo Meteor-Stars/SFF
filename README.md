@@ -1,5 +1,7 @@
 # SFF (Lost in the Non-convex Loss Landscape: How to Fine-tune the Large Time Series Model? Published in ICLR 2026)
-Pytorch implementation of SFF.
+Pytorch implementation of SFF. The paper is available at the link [Paper (PDF)](https://openreview.net/pdf?id=8o4t5DHaE1).
+
+
 
 ## Overview
 
